@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuSave"
+        android:title="Save Vacation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuDelete"
+        android:title="Delete Vacation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuAlert"
+        android:title="Alert"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuShare"
+        android:title="Share Details"
+        app:showAsAction="never" />
+
+</menu>

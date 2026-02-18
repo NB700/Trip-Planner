@@ -24,6 +24,10 @@
         </receiver>
 
         <activity
+            android:name=".UI.Report"
+            android:exported="false"
+            android:label="Report" />
+        <activity
             android:name=".UI.ExcursionDetails"
             android:exported="false"
             android:label="Excursion Details" />

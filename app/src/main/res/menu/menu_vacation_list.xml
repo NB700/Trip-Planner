@@ -6,5 +6,9 @@
         android:id="@+id/menuNotify"
         android:title="Manage Notifications"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menuReport"
+        android:title="Create Report"
+        app:showAsAction="never" />
 
 </menu>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:layout_marginTop="35dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:gravity="center_vertical"
+        app:title="Report"
+        app:titleTextColor="#FFFFFF"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@android:color/white"
+        app:navigationContentDescription="Back" />
+
+    <ScrollView
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/reportContainer"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+</LinearLayout>

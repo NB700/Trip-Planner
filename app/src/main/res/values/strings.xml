@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">D424 Vacation Planner</string>
+    <string-array name="dropdown_items">
+        <item>Vacation</item>
+        <item>Hotel</item>
+    </string-array>
 </resources>

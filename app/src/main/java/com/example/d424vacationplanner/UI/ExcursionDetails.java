@@ -208,12 +208,18 @@ public class ExcursionDetails extends AppCompatActivity {
 
     private void saveExcursion() {
         // Get user input
-        String title = editTitle.getText().toString().trim();
+        String titleInput = editTitle.getText().toString().trim();
 
-        if (title.isEmpty()) {
+        if (titleInput.isEmpty()) {
             Toast.makeText(this, "Enter a title.", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        if (titleInput.length() > 50) {
+            editTitle.setError("Max 50 characters allowed.");
+            return;
+        }
+        String title = titleInput.replaceAll("[^\\p{L}0-9 .'\"()\\-]", "").trim();
 
         // Test if save is working...
         // Log.d("SAVE","ID=" + excursionID + ", start=" + selectedStartDate );

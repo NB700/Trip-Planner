@@ -295,13 +295,26 @@ public class VacationDetails extends AppCompatActivity {
 
     private void saveVacation() {
         // Get user input
-        String title = editTitle.getText().toString().trim();
-        String hotel = editHotel.getText().toString().trim();
+        String titleInput = editTitle.getText().toString().trim();
+        String hotelInput = editHotel.getText().toString().trim();
 
-        if (title.isEmpty()) {
+        if (titleInput.isEmpty()) {
             Toast.makeText(this, "Enter a title.", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        if (titleInput.length() > 50) {
+            editTitle.setError("Max 50 characters allowed.");
+            return;
+        }
+        String title = titleInput.replaceAll("[^\\p{L}0-9 .'\"()\\-]", "").trim();
+        // The regex allows any unicode letter, any digit 0–9, space, period, apostrophe, double quote, hyphen, and parentheses.
+
+        if (hotelInput.length() > 50) {
+            editHotel.setError("Max 50 characters allowed.");
+            return;
+        }
+        String hotel = hotelInput.replaceAll("[^\\p{L}0-9 .'\"()\\-]", "").trim();
 
         // Test if save is working...
         // Log.d("SAVE","ID=" + vacationID +", start=" + selectedStartDate +", end=" + selectedEndDate);

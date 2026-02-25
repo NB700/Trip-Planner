@@ -36,6 +36,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.d424vacationplanner.R;
 import com.example.d424vacationplanner.database.Repository;
 import com.example.d424vacationplanner.entities.Vacation;
+import com.example.d424vacationplanner.search.HotelNameSearch;
+import com.example.d424vacationplanner.search.VacationNameSearch;
+import com.example.d424vacationplanner.search.VacationSearch;
+import com.example.d424vacationplanner.search.VacationSearchService;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.example.d424vacationplanner.UI;
+package com.example.d424vacationplanner.search;
 
 import com.example.d424vacationplanner.entities.Vacation;
 
